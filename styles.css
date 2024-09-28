@@ -2,11 +2,11 @@ body {font-family: Impact, sans-serif;
 background: pink ;
 }
    .light {
-    text-shadow: #5dc8e5 0 0 10px; /* Свечение голубого цвета */
+    text-shadow:#5dc8e5 0 0 10px; /* Свечение голубого цвета */
     color: #0083bd;
    }
    .dark {
-    text-shadow: red 0 0 10px; /* Свечение красного цвета */
+    text-shadow:red 0 0 10px; /* Свечение красного цвета */
    }
 h1 {
   font-size:50px ;
