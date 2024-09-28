@@ -3,7 +3,7 @@ background:pink ;
 }
    .light {
     text-shadow:#5dc8e5 0 0 10px; /* Свечение красного цвета */
-    color: #ff0000;
+    color:#ff0000;
    }
 
 h1 {
