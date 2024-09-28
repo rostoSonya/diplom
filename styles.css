@@ -2,7 +2,7 @@ body {font-family: Impact, sans-serif;
 background:pink ;
 }
    .light {
-    text-shadow:#f5c4ce 0 0 10px; /* Свечение красного цвета */
+    text-shadow:#ffebee 0 0 10px; /* Свечение красного цвета */
     color:#f06580;
    }
 
