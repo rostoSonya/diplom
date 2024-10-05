@@ -29,15 +29,15 @@ a:hover #1.jpg, a:focus #1.jpg{
 	transform: scale(2.5) rotate(-6deg);
 }
 
-a:hover #ris2.jpg, a:focus #2148093629.jpg{
+a:hover #ris2.jpg, a:focus #ris2.jpg{
 	transform: scale(2.5) rotate(8deg);
 }
 
-a:hover #ris3.jpg, a:focus #2148066675.jpg{
+a:hover #ris3.jpg, a:focus #ris3.jpg{
 	transform: scale(2.5) rotate(-10deg);
 }
 
-a:hover #ris4.jpg, a:focus #2148402347.jpg {
+a:hover #ris4.jpg, a:focus #ris4.jpg {
 	transform: scale(2.5) rotate(5deg);
 }
 
