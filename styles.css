@@ -25,19 +25,19 @@ a:hover img {
 }
 
 
-a:hover #4.jpg, a:focus #4.jpg{
+a:hover #1.jpg, a:focus #1.jpg{
 	transform: scale(2.5) rotate(-6deg);
 }
 
-a:hover #2148093629.jpg, a:focus #2148093629.jpg{
+a:hover #ris2.jpg, a:focus #2148093629.jpg{
 	transform: scale(2.5) rotate(8deg);
 }
 
-a:hover #2148066675.jpg, a:focus #2148066675.jpg{
+a:hover #ris3.jpg, a:focus #2148066675.jpg{
 	transform: scale(2.5) rotate(-10deg);
 }
 
-a:hover #2148402347.jpg, a:focus #2148402347.jpg {
+a:hover #ris4.jpg, a:focus #2148402347.jpg {
 	transform: scale(2.5) rotate(5deg);
 }
 
