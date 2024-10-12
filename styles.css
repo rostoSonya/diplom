@@ -26,15 +26,15 @@ a:hover img {
 
 
 a:hover #ris1, a:focus #ris1{
-	transform: scale(2.5) rotate(-6deg);
+	transform: scale(2.5) rotate(-5deg);
 }
 
 a:hover #ris2, a:focus #ris2{
-	transform: scale(2.5) rotate(8deg);
+	transform: scale(2.5) rotate(5deg);
 }
 
 a:hover #ris3, a:focus #ris3{
-	transform: scale(2.5) rotate(-10deg);
+	transform: scale(2.5) rotate(-5deg);
 }
 
 a:hover #ris4, a:focus #ris4{
