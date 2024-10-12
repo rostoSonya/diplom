@@ -41,5 +41,46 @@ a:hover #ris4, a:focus #ris4{
 	transform: scale(2.5) rotate(5deg);
 }
 
+body {
+				height: 200px;
+				background: beige;
+			}
+
+			
+			}
+		<p>Придаем высоту картинке </p>
+			#myImg {
+				height: 250px;
+			}
+	</pre>
+
+
+		<img id="myImg" src="https://meat-expert.ru/files/uploads/obzor/_2023/30/01.jpg" style="position: relative">
+
+</p>
+		<script>
+			var cat = document.querySelector("img");
+var angle = 0, lastTime = null;
+function animate(time) {
+if (lastTime != null)
+angle += (time - lastTime) * 0.002;
+lastTime = time;
+cat.style.top = (Math.cos(angle) * 50      ) + "px";
+cat.style.left = (Math.sin(angle) * 200) + "px";
+requestAnimationFrame(animate);
+}
+
+var button = document.querySelector("button");
+button.addEventListener("click", function() {
+alert("НЕ ТРОГАЙ МОИ ПЕЛЬМЕНИ!!!!");
+});
+
+document.getElementById('myImg').onclick = myFunction;
+
+function myFunction() {
+  alert('Ouch!!!');
+}
+
+requestAnimationFrame(animate);
 
 
