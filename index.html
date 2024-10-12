@@ -32,7 +32,39 @@
 <li><a href="https://jsitor.com/">анимация</a></li>
 <li><a href="page.html">важная информация дизайнерну</a></li>
 </ul>	
-	  
+	<p style="text-align: center">
+
+		<button>Покорми меня!</button>
+		<p>Горошка и морковки хватит, МММ... салатик. МММ... отлично...МММ... салатик</p>
+
+		<img id="myImg" src="https://meat-expert.ru/files/uploads/obzor/_2023/30/01.jpg" style="position: relative">
+
+</p>
+		<script>
+			var cat = document.querySelector("img");
+var angle = 0, lastTime = null;
+function animate(time) {
+if (lastTime != null)
+angle += (time - lastTime) * 0.002;
+lastTime = time;
+cat.style.top = (Math.cos(angle) * 50      ) + "px";
+cat.style.left = (Math.sin(angle) * 200) + "px";
+requestAnimationFrame(animate);
+}
+
+var button = document.querySelector("button");
+button.addEventListener("click", function() {
+alert("НЕ ТРОГАЙ МОИ ПЕЛЬМЕНИ!!!!");
+});
+
+document.getElementById('myImg').onclick = myFunction;
+
+function myFunction() {
+  alert('Ouch!!!');
+}
+
+requestAnimationFrame(animate);
+  
 <input type="date" tabindex="1">
 Выбор даты
 <input type="time" tabindex="2">
