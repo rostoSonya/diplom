@@ -13,6 +13,7 @@
       flex-wrap: wrap; /* Разрешаем перенос на новую строку */
       justify-content: center; /* Центрируем изображения */
       gap: 20px; /* Расстояние между изображениями */
+      margin-top: 20px;
     }
 
     /* Стили для изображений */
@@ -23,12 +24,7 @@
       transition: transform 0.3s ease-in-out;
     }
 
-    /* Эффект при наведении */
-    .image-container a:hover img {
-      box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Смещение изображений зигзагом */
+    /* Зигзагообразное расположение */
     .image-container a:nth-child(odd) img {
       transform: translateY(-20px); /* Смещение вверх для нечетных */
     }
@@ -37,7 +33,11 @@
       transform: translateY(20px); /* Смещение вниз для четных */
     }
 
-    /* Анимация при наведении */
+    /* Эффект при наведении */
+    .image-container a:hover img {
+      box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+    }
+
     .image-container a:hover #ris1, .image-container a:focus #ris1 {
       transform: scale(2.5) rotate(-6deg);
     }
