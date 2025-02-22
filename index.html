@@ -10,36 +10,47 @@
     /* Стили для контейнера изображений */
     .image-container {
       display: flex; /* Используем Flexbox */
-      justify-content: space-between; /* Равномерное распределение */
-      align-items: center; /* Выравнивание по центру */
-      flex-wrap: nowrap; /* Запрет переноса на новую строку */
-      gap: 10px; /* Расстояние между изображениями */
+      flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+      justify-content: center; /* Центрируем изображения */
+      gap: 20px; /* Расстояние между изображениями */
     }
 
-    img {
+    /* Стили для изображений */
+    .image-container img {
       width: 200px;
       height: 150px;
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease-in-out;
     }
 
-    a:hover img {
+    /* Эффект при наведении */
+    .image-container a:hover img {
       box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
     }
 
-    a:hover #ris1, a:focus #ris1 {
+    /* Смещение изображений зигзагом */
+    .image-container a:nth-child(odd) img {
+      transform: translateY(-20px); /* Смещение вверх для нечетных */
+    }
+
+    .image-container a:nth-child(even) img {
+      transform: translateY(20px); /* Смещение вниз для четных */
+    }
+
+    /* Анимация при наведении */
+    .image-container a:hover #ris1, .image-container a:focus #ris1 {
       transform: scale(2.5) rotate(-6deg);
     }
 
-    a:hover #ris2, a:focus #ris2 {
+    .image-container a:hover #ris2, .image-container a:focus #ris2 {
       transform: scale(2.5) rotate(8deg);
     }
 
-    a:hover #ris3, a:focus #ris3 {
+    .image-container a:hover #ris3, .image-container a:focus #ris3 {
       transform: scale(2.5) rotate(-10deg);
     }
 
-    a:hover #ris4, a:focus #ris4 {
+    .image-container a:hover #ris4, .image-container a:focus #ris4 {
       transform: scale(2.5) rotate(5deg);
     }
   </style>
