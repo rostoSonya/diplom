@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="myico.jpg">
+  <script src="jaja.js"></script>
+  <meta charset="utf-8">
+  <title>Дипломная работа</title>
+  <style>
+    /* Стили для контейнера изображений */
+    .image-container {
+      display: flex; /* Используем Flexbox */
+      justify-content: space-between; /* Равномерное распределение */
+      align-items: center; /* Выравнивание по центру */
+      flex-wrap: nowrap; /* Запрет переноса на новую строку */
+      gap: 10px; /* Расстояние между изображениями */
+    }
+
+    img {
+      width: 200px;
+      height: 150px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    a:hover img {
+      box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    a:hover #ris1, a:focus #ris1 {
+      transform: scale(2.5) rotate(-6deg);
+    }
+
+    a:hover #ris2, a:focus #ris2 {
+      transform: scale(2.5) rotate(8deg);
+    }
+
+    a:hover #ris3, a:focus #ris3 {
+      transform: scale(2.5) rotate(-10deg);
+    }
+
+    a:hover #ris4, a:focus #ris4 {
+      transform: scale(2.5) rotate(5deg);
+    }
+  </style>
+</head>
+<body>
+  <h1 class="light">Дипломная работа Кондратнко Софьи</h1>
+
+  <ul>
+    <ul id="ul1">
+      <li><a href="https://www.figma.com/design/1F54Wu5f003crbu4NXNYZB/Figma-basics?node-id=601-9&t=05BhMAIVpWhu7x20-1">Черновик сайта на фигме</a></li>
+      <li><a href="https://pythontutor.com/render.html#mode=display/">python</a></li>
+      <li><a href="https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/stable_diffusion.ipynb#scrollTo=yEErJFjlrSWS">рисование в colab</a></li>
+      <li><a href="https://www.designspiration.com/">Арт концепт</a></li>
+      <li><a href="https://freefrontend.com/css-animation-examples/">CSS анимация</a></li>
+      <li><a href="https://hcdev.ru/learn/css3/animations/#animation_1">Анимация</a></li>
+      <li><a href="https://dribbble.com/shots/following/web-design">Dribble</a></li>
+      <li><a href="https://cssremix.com/">cssremix</a></li>
+      <li><a href="https://www.cssmania.com/">портфолио шаблоны для ссылок</a></li>
+      <li><a href="https://3docean.net/?auto_signin=true&_gl=1*1u8d6w4*_ga*NDMyNjg5NTI5LjE3MDQ0ODYyOTg.*_ga_ZKBVC1X78F*MTcwNDQ4NjI5OS4xLjEuMTcwNDQ4NjMyNi4wLjAuMA..&_ga=2.225649118.558704552.1704486298-432689529.1704486298">envatomarket</a></li>
+      <li><a href="https://color.adobe.com/ru/color-labs/recolor-svg">красим Abode calor</a></li>
+      <li><a href="https://color.adobe.com/ru/create/color-wheel">Abode calor</a></li>
+      <li><a href="https://www.awwwards.com/">чарт продажных сайтов</a></li>
+      <li><a href="https://www.colourlovers.com/">цветные любители</a></li>
+      <li><a href="https://jsitor.com/">анимация</a></li>
+      <li><a href="page.html">важная информация дизайнерну</a></li>
+      <li><a href="https://onlinetestpad.com/nn3ny3tosvica">тест html</a></li>
+      <li><a href="https://wordpress.com/view/sophi2024.wordpress.com">My Wordpress</a></li>
+      <li><a href="https://try2007.github.io/test/">Графика Pithon</a></li>
+      <li><a href="https://ambientcg.com">Текстуры без регистрации</a></li>
+      <li><a href="https://docs.blender.org/manual/ru/dev/#">Супер помощь Blender</a></li>
+    </ul>
+  </ul>
+
+  <p style="text-align: center">
+    <button>Покорми меня!</button>
+    <p>Горошка и морковки хватит, МММ... салатик. МММ... отлично...МММ... салатик</p>
+    <img id="myImg" src="https://meat-expert.ru/files/uploads/obzor/_2023/30/01.jpg" style="position: relative">
+  </p>
+
+  <!-- Контейнер для изображений -->
+  <div class="image-container">
+    <a href=""><img id="ris1" src="ris1.jpg" width="200" height="100"></a>
+    <a href=""><img id="ris2" src="ris2.jpg" width="200" height="100"></a>
+    <a href=""><img id="ris3" src="ris3.jpg" width="200" height="100"></a>
+    <a href=""><img id="ris4" src="ris4.jpg" width="200" height="100"></a>
+  </div>
+
+  <script>
+    var cat = document.querySelector("img");
+    var angle = 0, lastTime = null;
+    function animate(time) {
+      if (lastTime != null)
+        angle += (time - lastTime) * 0.002;
+      lastTime = time;
+      cat.style.top = (Math.cos(angle) * 50) + "px";
+      cat.style.left = (Math.sin(angle) * 200) + "px";
+      requestAnimationFrame(animate);
+    }
+
+    var button = document.querySelector("button");
+    button.addEventListener("click", function() {
+      alert("НЕ ТРОГАЙ МОИ ПЕЛЬМЕНИ!!!!");
+    });
+
+    document.getElementById('myImg').onclick = myFunction;
+
+    function myFunction() {
+      alert('Ouch!!!');
+    }
+
+    requestAnimationFrame(animate);
+  </script>
+</body>
+</html>
