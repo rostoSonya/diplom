@@ -21,28 +21,28 @@ transition: transform .3s ease-in-out;
 
 
 a:hover img {
-	box-shadow: 6px 6px 6px rgba(0,0,0,.3);
+  box-shadow: 6px 6px 6px rgba(0,0,0,.3);
 }
 
 
 a:hover #ris1, a:focus #ris1{
-	transform: scale(2.5) rotate(-5deg);
+  transform: scale(2.5) rotate(-5deg);
 }
 
 a:hover #ris2, a:focus #ris2{
-	transform: scale(2.5) rotate(5deg);
+  transform: scale(2.5) rotate(5deg);
 }
 
 a:hover #ris3, a:focus #ris3{
-	transform: scale(2.5) rotate(-5deg);
+  transform: scale(2.5) rotate(-5deg);
 }
 
 a:hover #ris4, a:focus #ris4{
-	transform: scale(2.5) rotate(5deg);
+  transform: scale(2.5) rotate(5deg);
 }
 
-			 
+       
 
 a {
-	font-size:38px;
+  font-size:38px;
 }
