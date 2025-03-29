@@ -85,6 +85,32 @@
       <li><a href="https://ambientcg.com">Текстуры без регистрации</a></li>
       <li><a href="https://docs.blender.org/manual/ru/dev/#">Супер помощь Blender</a></li>
     </ul>
+	  <script>
+			var cat = document.querySelector("img");
+var angle = 0, lastTime = null;
+function animate(time) {
+if (lastTime != null)
+angle += (time - lastTime) * 0.002;
+lastTime = time;
+cat.style.top = (Math.cos(angle) * 50      ) + "px";
+cat.style.left = (Math.sin(angle) * 200) + "px";
+requestAnimationFrame(animate);
+}
+
+var button = document.querySelector("button");
+button.addEventListener("click", function() {
+alert("НЕ ТРОГАЙ МОИ ПЕЛЬМЕНИ!!!!");
+});
+
+document.getElementById('myImg').onclick = myFunction;
+
+function myFunction() {
+  alert('Ouch!!!');
+}
+
+requestAnimationFrame(animate);
+		</script>
+	  
   </ul>
 
   <p style="text-align: center">
